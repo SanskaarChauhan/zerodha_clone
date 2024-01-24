@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZERODHA_CLONE</title>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/menu.css' rel='stylesheet'>
     <style type="text/css">
         body {
             font-family: sans-serif;
@@ -17,7 +18,8 @@
         
         .abc:hover {
             text-decoration: none;
-            color: aqua;
+            color: #387ed1;
+            font-weight: 300;
         }
         
         .navi {
@@ -32,15 +34,22 @@
         /* Adjustments to the navbar */
         .navbar {
             display: flex;
-            align-items: center;
-            justify-content: space-between;
+            justify-content: space-evenly;
+            width: 100%;
             padding: 10px 20px;
             color: #F0F0F0;
+            box-shadow: rgb(238, 238, 238) 2px 1px 2px 0px; 
+        }
+        /* to maintain space btw window */
+        .hero{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 55%;
         }
 
         .img_holder img {
-            height: 30px;
-            width: 130px;
+            height: 20px;
         }
 
         .link_holder {
@@ -50,24 +59,32 @@
         .link_holder a {
             margin-left: 20px; /* Adjust as needed */
         }
+        
+        .gg-menu{
+            margin: 15px; /* seperates munu btn */
+            color: #585858;
+        }
     </style>
 </head>
 <body>
     <nav class="navbar">
-        <div class="img_holder">
-            <img src="https://zerodha.com/static/images/logo.svg" alt="">
-        </div>
-        <div class="link_holder">
-            <b>
-                <a href="" class="abc">Signup</a>
-                <a href="" class="abc">About</a>
-                <a href="" class="abc">Products</a>
-                <a href="" class="abc">Pricing</a>
-                <a href="" class="abc">Support</a>
-            </b>
+        <div class="hero">
+            <div class="img_holder">
+                <img src="https://zerodha.com/static/images/logo.svg" alt="">
+            </div>
+            <div class="link_holder">
+                <b>
+                    <a href="" class="abc">Signup</a>
+                    <a href="" class="abc">About</a>
+                    <a href="" class="abc">Products</a>
+                    <a href="" class="abc">Pricing</a>
+                    <a href="" class="abc">Support</a>
+                </b>
+            </div>
+            <i class="gg-menu"></i>
         </div>
     </nav>
-<hr>
+
     <br><br>
     <div class="images_page">
         <p align="center">
